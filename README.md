@@ -87,15 +87,33 @@ Software requirements are primarily categorized into two distinct types: Functio
 * **Scalability (قابلية التوسع):** The system MUST be able to support up to 10,000 concurrent active user sessions without performance degradation.
 ## 5. Use Case Diagrams
 ## 5. مخططات حالة الاستخدام
+## Acceptance Criteria
 
-A Use Case Diagram is a behavioral Unified Modeling Language (UML) diagram that shows a high-level view of the system's intended functionality. It graphically represents the system's boundaries, the main features (use cases), and the different types of users interacting with the system (actors).
+Acceptance Criteria are the specific conditions that a product or feature must meet to be accepted by the client or end user.  
+They serve as a clear agreement between the development team and stakeholders, ensuring everyone understands what “done” means.  
+Well-defined acceptance criteria help reduce misunderstandings, guide testing, and improve overall software quality.
 
-**Benefits of Use Case Diagrams:**
-* **Simple Communication:** Provides an easy-to-understand visual representation for stakeholders, including non-technical users.
-* **Scope Definition:** Clearly defines the boundary of the system and what functionalities are included.
-* **Basis for Test Cases:** Each use case can be translated into one or more test scenarios.
+### Importance of Acceptance Criteria
+- They define clear expectations for each feature.
+- They provide measurable outcomes for testing.
+- They help ensure the final product meets user needs.
+- They make communication between developers, testers, and clients easier.
 
-### Use Case Diagram for the Booking Management System
+### Example: Checkout Feature in a Booking Management System
+
+**Feature:** Checkout Process
+
+**Acceptance Criteria:**
+1. The system must allow the user to review all selected bookings before final payment.  
+2. The checkout page must display the total price, including taxes and fees.  
+3. The user must be able to choose a payment method (credit card, PayPal, or mobile money).  
+4. The system must confirm successful payment and display a “Booking Confirmed” message.  
+5. If payment fails, the system must show an error message and allow the user to retry.
+
+---
+
+These criteria ensure that the checkout feature works as intended, is user-friendly, and meets all business requirements.
+
 ### مخطط حالة الاستخدام لنظام إدارة الحجز
 
 The following diagram illustrates the primary actors and their interactions with the Booking Management System:
