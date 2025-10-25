@@ -105,7 +105,7 @@ The following diagram illustrates the primary actors and their interactions with
 | **Customer/User** (العميل/المستخدم) | An external user who interacts with the system to book, manage, or cancel services. |
 | **System Administrator** (مسؤول النظام) | An internal user responsible for system setup, maintenance, and managing user accounts. |
 | **Payment Gateway** (بوابة الدفع) | An external system that processes payments. |
-
+![alx-booking-uc](alx-booking-uc.png)
 [**Image:** alx-booking-uc.png]
 
 ---
