@@ -33,3 +33,22 @@ Requirement Analysis is not just a preliminary step; it is the foundation that d
     * **Planning:** They allow project managers to accurately estimate resources, timelines, and budgets.
     * **Design:** They act as the blueprint for architects and developers.
     * **Testing:** They form the test cases and acceptance criteria used to validate that the delivered software works as intended.
+## Key Activities in Requirement Analysis
+## الأنشطة الرئيسية في تحليل المتطلبات
+
+Requirement Analysis is an iterative process involving several distinct and critical activities. These five core activities ensure that the requirements are complete, correct, and understood by all stakeholders:
+
+### 1. Requirement Gathering (جمع المتطلبات)
+* **Description:** This initial phase involves collecting all raw information from various sources related to the system's needs, scope, and objectives. This often includes existing system documents, market research, and business strategy papers.
+
+### 2. Requirement Elicitation (استنباط المتطلبات)
+* **Description:** This is the active process of discovering and extracting requirements directly from stakeholders. Key techniques used here include interviews, brainstorming sessions, workshops (JAD), questionnaires, and observation of users. The goal is to articulate what the users and the business truly need.
+
+### 3. Requirement Analysis and Modeling (تحليل المتطلبات والنمذجة)
+* **Description:** The collected (elicited) requirements are examined for conflicts, ambiguities, incompleteness, and feasibility. Analysis techniques involve classifying requirements, prioritizing them, and translating them into models (e.g., Use Case diagrams, Data Flow Diagrams, Activity Diagrams) to visualize the system's structure and behavior.
+
+### 4. Requirement Documentation (وثائق المتطلبات)
+* **Description:** The analyzed and refined requirements are formally recorded in a structured document, typically the Software Requirements Specification (SRS) document. This document acts as the official contract between the stakeholders and the development team, detailing both functional and non-functional requirements.
+
+### 5. Requirement Validation (التحقق من صحة المتطلبات)
+* **Description:** This final check ensures that the documented requirements are correct, complete, consistent, and traceable back to the business objectives. Validation techniques include formal reviews, walkthroughs, prototyping, and creating test cases based on the requirements to confirm they meet stakeholder expectations before development begins.
