@@ -148,3 +148,6 @@ Acceptance Criteria (AC) are a set of conditions that a software feature must sa
 | **AC-C3** | If the payment fails (e.g., card declined), the system MUST display a clear error message and allow the user to re-enter payment details without losing booking information. |
 | **AC-C4** | The system MUST send an automatic confirmation email to the user within 60 seconds of a successful transaction. |
 | **AC-C5** | The system MUST update the inventory/calendar availability immediately upon successful payment to prevent double-booking. |
+## Example Wireframe
+
+![Wireframe Example](./wireframe.png)
