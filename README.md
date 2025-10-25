@@ -106,7 +106,7 @@ The following diagram illustrates the primary actors and their interactions with
 | **System Administrator** (مسؤول النظام) | An internal user responsible for system setup, maintenance, and managing user accounts. |
 | **Payment Gateway** (بوابة الدفع) | An external system that processes payments. |
 ![alx-booking-uc](alx-booking-uc.png)
-[**Image:** alx-booking-uc.png]
+
 
 ---
 ## 6. Acceptance Criteria
