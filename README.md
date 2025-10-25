@@ -52,3 +52,35 @@ Requirement Analysis is an iterative process involving several distinct and crit
 
 ### 5. Requirement Validation (التحقق من صحة المتطلبات)
 * **Description:** This final check ensures that the documented requirements are correct, complete, consistent, and traceable back to the business objectives. Validation techniques include formal reviews, walkthroughs, prototyping, and creating test cases based on the requirements to confirm they meet stakeholder expectations before development begins.
+## Types of Requirements
+## أنواع المتطلبات
+
+Software requirements are primarily categorized into two distinct types: Functional Requirements (what the system *must do*) and Non-functional Requirements (how well the system *must perform*).
+
+### 1. Functional Requirements (FR)
+### 1. المتطلبات الوظيفية (FR)
+
+**Definition:** These define the specific functions, features, or behaviors that the system must exhibit to satisfy user needs and business objectives. They describe what the system does.
+
+**Examples for a Booking Management Project:**
+
+* **User Authentication:** The system MUST allow users to log in and log out securely using a username and password.
+* **Booking Creation:** The system MUST allow a user to select a date, time, and service type, and create a new reservation.
+* **Booking Modification:** The system MUST allow a user to view, reschedule, or cancel an existing reservation, subject to business rules.
+* **Payment Processing:** The system MUST integrate with a payment gateway to process credit card payments for booked services.
+* **Notification:** The system MUST send an email confirmation to the user immediately after a booking is successfully created.
+
+***
+
+### 2. Non-functional Requirements (NFR)
+### 2. المتطلبات غير الوظيفية (NFR)
+
+**Definition:** These define the quality attributes, constraints, and criteria for system operation. They describe *how* the system performs its functions (e.g., speed, security, usability).
+
+**Examples for a Booking Management Project:**
+
+* **Performance (الأداء):** The system MUST load any booking-related page in less than 3 seconds, even during peak usage times.
+* **Security (الأمان):** All user passwords MUST be stored in the database using industry-standard hashing and encryption techniques.
+* **Availability (التوفر):** The booking service MUST be available 99.9% of the time (excluding scheduled maintenance).
+* **Usability (سهولة الاستخدام):** The booking interface MUST be intuitive, allowing a new user to complete a reservation in three steps or less.
+* **Scalability (قابلية التوسع):** The system MUST be able to support up to 10,000 concurrent active user sessions without performance degradation.
