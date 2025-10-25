@@ -84,3 +84,47 @@ Software requirements are primarily categorized into two distinct types: Functio
 * **Availability (التوفر):** The booking service MUST be available 99.9% of the time (excluding scheduled maintenance).
 * **Usability (سهولة الاستخدام):** The booking interface MUST be intuitive, allowing a new user to complete a reservation in three steps or less.
 * **Scalability (قابلية التوسع):** The system MUST be able to support up to 10,000 concurrent active user sessions without performance degradation.
+## 5. Use Case Diagrams
+## 5. مخططات حالة الاستخدام
+
+A Use Case Diagram is a behavioral Unified Modeling Language (UML) diagram that shows a high-level view of the system's intended functionality. It graphically represents the system's boundaries, the main features (use cases), and the different types of users interacting with the system (actors).
+
+**Benefits of Use Case Diagrams:**
+* **Simple Communication:** Provides an easy-to-understand visual representation for stakeholders, including non-technical users.
+* **Scope Definition:** Clearly defines the boundary of the system and what functionalities are included.
+* **Basis for Test Cases:** Each use case can be translated into one or more test scenarios.
+
+### Use Case Diagram for the Booking Management System
+### مخطط حالة الاستخدام لنظام إدارة الحجز
+
+The following diagram illustrates the primary actors and their interactions with the Booking Management System:
+
+| Actor (الممثل) | Description (الوصف) |
+| :--- | :--- |
+| **Customer/User** (العميل/المستخدم) | An external user who interacts with the system to book, manage, or cancel services. |
+| **System Administrator** (مسؤول النظام) | An internal user responsible for system setup, maintenance, and managing user accounts. |
+| **Payment Gateway** (بوابة الدفع) | An external system that processes payments. |
+
+[**Image:** alx-booking-uc.png]
+
+---
+## 6. Acceptance Criteria
+## 6. معايير القبول
+
+Acceptance Criteria (AC) are a set of conditions that a software feature must satisfy to be accepted by the users, customers, or product owner. They are formal checkpoints used during testing (specifically Acceptance Testing) to confirm that the feature performs its intended function and meets all quality standards.
+
+**Importance in Requirement Analysis:**
+* **Clarity and Consensus:** They bridge the gap between business requirements and technical implementation, ensuring everyone agrees on what "done" means.
+* **Testable Definition:** They make requirements measurable and testable, eliminating ambiguity.
+* **Go/No-Go Decision:** They provide the clear basis for the Product Owner to approve or reject a feature delivery.
+
+### Acceptance Criteria Example: The Checkout Feature
+### مثال على معايير القبول: ميزة "إنهاء عملية الشراء/الخروج"
+
+| ID | Criteria |
+| :--- | :--- |
+| **AC-C1** | The system MUST successfully process payment via credit card (Visa/MasterCard). |
+| **AC-C2** | If the payment is successful, the user MUST be redirected to a confirmation page displaying the booking details and a confirmation number. |
+| **AC-C3** | If the payment fails (e.g., card declined), the system MUST display a clear error message and allow the user to re-enter payment details without losing booking information. |
+| **AC-C4** | The system MUST send an automatic confirmation email to the user within 60 seconds of a successful transaction. |
+| **AC-C5** | The system MUST update the inventory/calendar availability immediately upon successful payment to prevent double-booking. |
