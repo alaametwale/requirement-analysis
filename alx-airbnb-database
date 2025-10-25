@@ -1,0 +1,67 @@
+# 1. نسخة من المستودع (إذا ما نزلتيش) أو ابدئي مجلد جديد
+git clone https://github.com/USERNAME/alx-airbnb-database.git
+cd alx-airbnb-database
+
+# 2. أنشئي مجلد ERD وملف requirements.md
+mkdir -p ERD
+cat > ERD/requirements.md <<'EOF'
+# Entity Relationship Diagram (ERD)
+## Airbnb Database Design
+
+### Entities and Attributes
+
+1. **User**
+- user_id (PK)
+- first_name
+- last_name
+- email
+- phone
+- created_at
+
+2. **Property**
+- property_id (PK)
+- owner_id (FK -> User.user_id)
+- title
+- description
+- location
+- price_per_night
+- created_at
+
+3. **Booking**
+- booking_id (PK)
+- user_id (FK -> User.user_id)
+- property_id (FK -> Property.property_id)
+- start_date
+- end_date
+- total_price
+- status
+
+4. **Payment**
+- payment_id (PK)
+- booking_id (FK -> Booking.booking_id)
+- amount
+- payment_date
+- payment_method
+- payment_status
+
+5. **Review**
+- review_id (PK)
+- user_id (FK -> User.user_id)
+- property_id (FK -> Property.property_id)
+- rating
+- comment
+- created_at
+
+### Relationships
+- A User can own many Properties (1 : N)
+- A User can make many Bookings (1 : N)
+- A Property can have many Bookings (1 : N)
+- Each Booking is linked to one Payment (1 : 1)
+- A User can write many Reviews (1 : N)
+- A Property can receive many Reviews (1 : N)
+EOF
+
+# 3. أضيفي، كوميت ودفع (push)
+git add ERD/requirements.md
+git commit -m "Add ERD requirements"
+git push
