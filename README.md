@@ -98,6 +98,7 @@ Well-defined acceptance criteria help reduce misunderstandings, guide testing, a
 - They provide measurable outcomes for testing.
 - They help ensure the final product meets user needs.
 - They make communication between developers, testers, and clients easier.
+![alx-booking-uc](alx-booking-uc.png)
 
 ### Example: Checkout Feature in a Booking Management System
 
